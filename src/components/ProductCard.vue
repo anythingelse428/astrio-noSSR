@@ -74,10 +74,15 @@ export default {
   margin: 0.5em 0.3em;
   flex-direction: row;
   flex-wrap: wrap;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.2em;
+  padding: 0.5em;
 }
 
 .productCard__footer {
   width: 99%;
+  border-top: 2px solid #d7d7d7;
+  padding: .4em 0;
   display: flex;
   justify-content: center;
   align-items: center;
