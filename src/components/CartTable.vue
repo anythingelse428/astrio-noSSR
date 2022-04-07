@@ -31,8 +31,8 @@
             </div>
           </td>
           <td nowrap>
-            <span v-if="item.price.currency === 'USD'">$</span
-            ><span v-else-if="item.price.currency === 'RUB'">₽</span
+            <span v-if="item.price.currency == 'USD'">$</span
+            ><span v-else-if="item.price.currency == 'RUB'">₽</span
             >{{ item.price.value }}
           </td>
           <td nowrap>
