@@ -51,19 +51,24 @@ export default {
 .filter {
   padding: 0.5em;
   height: 100%;
-  align-items: center;
-  float: left;
+  text-align: center;
+  float: right;
   border-right: 2px solid #d3d3d3ee;
 }
 .brandActive {
   text-decoration: underline;
   font-weight: bolder;
 }
+.brands{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .brand {
   cursor: pointer;
   font-size: 1.2em;
-  width: 100%;
-  margin: 0.5em 0;
+  margin: 0.5em auto;
+  color: #535353;
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -79,15 +84,18 @@ export default {
   .brands {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    flex-direction: row;
   }
   .brand {
     cursor: pointer;
     font-size: 1.2em;
-    width: 25%;
+    width: max-content;
+    margin: 0.1em 0.4em;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 481px) {
   .brands {
     justify-content: center;
   }
