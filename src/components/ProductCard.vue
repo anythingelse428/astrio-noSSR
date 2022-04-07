@@ -1,7 +1,7 @@
 <template>
   <div class="productCard">
     <div class="productCard__img ratio ratio-1x1">
-      <img v-lazy:src="CARD_IMAGE" class="" alt="" />
+      <img :src="CARD_IMAGE" class="" alt="" />
     </div>
     <div class="productCard__footer">
       <div class="info productCard__information">
